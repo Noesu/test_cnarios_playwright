@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-cnarios-playwright"
+version = "0.1.0"
+description = "Test framework for MUI components using Playwright"
+authors = ["kk <noesugar@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.13"
+playwright = "^1.55.0"
+pytest = "^8.4.2"
+pandas = "^2.3.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest-html = "^4.1.1"
+allure-pytest = "^2.15.0"
+pytest-playwright = "^0.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
