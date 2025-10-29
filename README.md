@@ -17,9 +17,27 @@ Allure Reports.
 - Python 3.13 (framework developed on 3.13, should work on 3.8+ but not fully tested)
 - Git
 
-## ⚙️ Installation
+##  Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone [repository-url]
-   cd mui-test-framework
+```bash
+git clone [repository-url]
+cd test-cnarios-playwright
+```
+
+2. **Install dependencies**
+```bash
+poetry install
+```
+
+3. **Install Playwright browsers**
+```bash
+poetry run playwright install
+```
+
+## Running tests
+   
+### **Run tests with auto-opened Allure report**
+```bash
+poetry run pytest tests/
+```
